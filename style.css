@@ -123,6 +123,7 @@ ul {
 /* Drag and Drop */
 .over {
   padding: 50px 10px;
+  opacity: 0.3;
 }
 
 .drag-item-list {
@@ -222,6 +223,27 @@ ul {
   }
 }
 
+/* Media Query: Small Tablet (Vertical) */
+@media screen and (max-width: 800px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .drag-container {
+    margin: 0;
+  }
+
+  .drag-list {
+    display: block;
+  }
+
+  .drag-column {
+    margin: 10px;
+  }
+}
+
+
+
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
   body {
@@ -240,3 +262,4 @@ ul {
     margin: 10px;
   }
 }
+
